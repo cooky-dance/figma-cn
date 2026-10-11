@@ -1,6 +1,6 @@
 {
   "name": "figma-cn",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Figma 网页版简体中文浏览器扩展（Chrome / Edge / Tabbit），仅在 figma.com 运行",
   "private": true,
   "license": "GPL-3.0-only",

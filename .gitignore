@@ -19,3 +19,6 @@ extension/js/page-hook.js
 extension/js/bridge.js
 extension/dict/
 extension/LICENSE
+
+# 商店上架物料与打包产物（由 build/make-store-assets.js 生成，zip 通过 Releases 分发）
+store/

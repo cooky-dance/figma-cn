@@ -1,6 +1,6 @@
 # figma-cn
 
-Figma 网页版的简体中文浏览器扩展。只在 `figma.com` 运行，支持 Chrome、Edge、Tabbit 等 Chromium 内核浏览器（Manifest V3，Chromium 111+）。
+Figma 网页版的简体中文浏览器扩展（扩展名称：**Figma FullCN**）。只在 `figma.com` 运行，支持 Chrome、Edge、Tabbit 等 Chromium 内核浏览器（Manifest V3，Chromium 111+）。
 
 > 非 Figma 官方项目，与 Figma, Inc. 无关联。Figma 是 Figma, Inc. 的商标。
 
@@ -13,17 +13,19 @@ Figma 网页版的简体中文浏览器扩展。只在 `figma.com` 运行，支�
 
 ## 安装
 
-1. 下载本仓库（Code → Download ZIP 并解压，或 `git clone`）。
+1. 打开 [Releases 页面](https://github.com/cooky-dance/figma-cn/releases/latest)，下载 `figma-fullcn-x.y.z.zip` 并解压到一个固定的文件夹（安装后不要删除或移动它）。
 2. 打开浏览器的扩展管理页：
    - Chrome / Tabbit：`chrome://extensions`
    - Edge：`edge://extensions`
 3. 打开 **开发者模式**。
-4. 点 **加载已解压的扩展程序**，选择仓库里的 `dist/figma-zh-extension` 文件夹。
+4. 点 **加载已解压的扩展程序**，选择刚才解压出来的文件夹（里面直接能看到 `manifest.json`）。
 5. 刷新 figma.com。
 
 Figma 账户设置里的语言请保持 **English**。本扩展替换的是英文词典，选择日语等其他语言时不生效。
 
-**更新扩展后**：在扩展管理页点这个扩展卡片上的「重新加载」，再刷新 figma.com。只刷新网页不会生效。
+**更新版本**：下载新的 zip，解压覆盖到原来的文件夹，在扩展管理页点这个扩展卡片上的「重新加载」，再刷新 figma.com。只刷新网页不会生效。
+
+也可以直接使用源码：`git clone` 本仓库后加载 `dist/figma-zh-extension` 文件夹。
 
 **确认是否生效**：在 figma.com 按 F12 打开 Console，看到 `[figma-zh] 已汉化 N / M 条` 即表示词典已替换。
 
