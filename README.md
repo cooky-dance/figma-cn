@@ -12,8 +12,10 @@ Figma 网页版的简体中文浏览器扩展（扩展名称：**Figma FullCN**�
 - **只在 figma.com 生效**，只申请 `storage` 权限，不联网、不收集任何数据。
 
 ## 安装
-Edge浏览器 商店[点击跳转](
+##Edge浏览器 商店[点击跳转](
 https://microsoftedge.microsoft.com/addons/detail/kgaadhoacblldgkndlfkaeboccnlcdjo)
+
+
 1. 打开 [Releases 页面](https://github.com/cooky-dance/figma-cn/releases/latest)，下载 `figma-fullcn-x.y.z.zip` 并解压到一个固定的文件夹（安装后不要删除或移动它）。
 2. 打开浏览器的扩展管理页：
    - Chrome / Tabbit：`chrome://extensions`
