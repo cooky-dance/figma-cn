@@ -74,6 +74,6 @@ const copy = (from, to) => {
     for (const f of fs.readdirSync(from)) copy(path.join(from, f), path.join(to, f));
   } else fs.writeFileSync(to, fs.readFileSync(from));
 };
-for (const item of ['manifest.json', 'popup.html', 'LICENSE', 'img', 'js', 'dict']) copy(p('extension', item), path.join(dist, item));
+for (const item of ['manifest.json', 'popup.html', 'LICENSE', '_locales', 'img', 'js', 'dict']) copy(p('extension', item), path.join(dist, item));
 
 console.log(`扩展已构建：${meta.entries} 条 → dist/figma-zh-extension`);

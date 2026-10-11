@@ -1,9 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "Figma FullCN",
-  "short_name": "FullCN",
-  "description": "Figma 网页版简体中文界面。覆盖 3.2 万词条，仅在 figma.com 运行，不收集任何数据。非 Figma 官方出品。",
-  "version": "1.0.2",
+  "default_locale": "zh_CN",
+  "name": "__MSG_extName__",
+  "short_name": "__MSG_extShortName__",
+  "description": "__MSG_extDesc__",
+  "version": "1.0.3",
   "minimum_chrome_version": "111",
   "icons": {
     "16": "img/icon-16.png",
@@ -11,32 +12,53 @@
     "128": "img/icon-128.png"
   },
   "action": {
-    "default_title": "Figma FullCN",
+    "default_title": "__MSG_extName__",
     "default_popup": "popup.html",
     "default_icon": {
       "16": "img/icon-16.png",
       "48": "img/icon-48.png"
     }
   },
-  "permissions": ["storage"],
-  "host_permissions": ["https://www.figma.com/*", "https://figma.com/*"],
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.figma.com/*",
+    "https://figma.com/*"
+  ],
   "web_accessible_resources": [
     {
-      "resources": ["dict/dom-fallback.json"],
-      "matches": ["https://www.figma.com/*", "https://figma.com/*"]
+      "resources": [
+        "dict/dom-fallback.json"
+      ],
+      "matches": [
+        "https://www.figma.com/*",
+        "https://figma.com/*"
+      ]
     }
   ],
   "content_scripts": [
     {
-      "matches": ["https://www.figma.com/*", "https://figma.com/*"],
-      "js": ["dict/web-zh-cn.js", "js/page-hook.js"],
+      "matches": [
+        "https://www.figma.com/*",
+        "https://figma.com/*"
+      ],
+      "js": [
+        "dict/web-zh-cn.js",
+        "js/page-hook.js"
+      ],
       "run_at": "document_start",
       "all_frames": true,
       "world": "MAIN"
     },
     {
-      "matches": ["https://www.figma.com/*", "https://figma.com/*"],
-      "js": ["js/bridge.js"],
+      "matches": [
+        "https://www.figma.com/*",
+        "https://figma.com/*"
+      ],
+      "js": [
+        "js/bridge.js"
+      ],
       "run_at": "document_start",
       "all_frames": true
     }

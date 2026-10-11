@@ -1,0 +1,11 @@
+{
+  "extName": {
+    "message": "Figma FullCN"
+  },
+  "extShortName": {
+    "message": "FullCN"
+  },
+  "extDesc": {
+    "message": "Figma 网页版简体中文界面。覆盖 3.2 万词条，仅在 figma.com 运行，不收集任何数据。非 Figma 官方出品。"
+  }
+}

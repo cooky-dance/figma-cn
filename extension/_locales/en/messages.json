@@ -1,0 +1,11 @@
+{
+  "extName": {
+    "message": "Figma FullCN"
+  },
+  "extShortName": {
+    "message": "FullCN"
+  },
+  "extDesc": {
+    "message": "Simplified Chinese interface for the Figma web app. 32,000+ strings, runs only on figma.com, collects no data. Unofficial."
+  }
+}
