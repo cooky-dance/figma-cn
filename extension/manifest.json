@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "Figma 简体中文",
+  "short_name": "Figma 中文",
+  "description": "仅在 figma.com 运行的 Figma 网页版汉化：按官方词条 key 原生替换为中文，并可选启用 DOM 补充翻译。",
+  "version": "1.0.1",
+  "minimum_chrome_version": "111",
+  "icons": {
+    "16": "img/icon-16.png",
+    "48": "img/icon-48.png",
+    "128": "img/icon-128.png"
+  },
+  "action": {
+    "default_title": "Figma 简体中文",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "img/icon-16.png",
+      "48": "img/icon-48.png"
+    }
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["https://www.figma.com/*", "https://figma.com/*"],
+  "web_accessible_resources": [
+    {
+      "resources": ["dict/dom-fallback.json"],
+      "matches": ["https://www.figma.com/*", "https://figma.com/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.figma.com/*", "https://figma.com/*"],
+      "js": ["dict/web-zh-cn.js", "js/page-hook.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://www.figma.com/*", "https://figma.com/*"],
+      "js": ["js/bridge.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}

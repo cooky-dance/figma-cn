@@ -1,0 +1,21 @@
+node_modules/
+
+# Figma 的英文原始词典及按英文原文索引的翻译记忆：含 Figma 界面原文，不随仓库分发。
+# 需要更新词典时在本地用 build/update-source.js 生成。
+source/
+translations/web/zh-cn.by-en.json
+
+# 翻译批次等中间产物
+translations/work/
+
+# 已停用的桌面客户端补丁器（Figma 桌面版有完整性检查，无法使用）
+desktop/
+
+# 一次性内部脚本
+build/recover-from-transcripts.js
+
+# 构建中间产物（可安装的扩展在 dist/figma-zh-extension）
+extension/js/page-hook.js
+extension/js/bridge.js
+extension/dict/
+extension/LICENSE

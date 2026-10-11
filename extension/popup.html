@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Figma 简体中文</title>
+<style>
+  :root { --bg: #fff; --fg: #1e1e1e; --muted: #6b6b6b; --line: #e6e6e6; --accent: #0d99ff; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #2c2c2c; --fg: #f0f0f0; --muted: #a8a8a8; --line: #444; } }
+  body { margin: 0; width: 280px; font: 13px/1.5 system-ui, "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--fg); }
+  header { padding: 12px 14px; border-bottom: 1px solid var(--line); font-weight: 600; }
+  label { display: flex; align-items: flex-start; gap: 8px; padding: 10px 14px; cursor: pointer; }
+  label small { display: block; color: var(--muted); font-weight: normal; }
+  input { margin-top: 3px; accent-color: var(--accent); }
+  .row { padding: 10px 14px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  button { border: 0; border-radius: 5px; padding: 6px 10px; background: var(--accent); color: #fff; cursor: pointer; font: inherit; }
+  #stats { color: var(--muted); font-size: 12px; }
+</style>
+</head>
+<body>
+  <header>Figma 简体中文</header>
+  <label><input type="checkbox" id="enabled"><span>启用中文界面<small>按官方词条原生替换，仅作用于 figma.com</small></span></label>
+  <label><input type="checkbox" id="domFallback"><span>补充翻译（实验性）<small>对少量未走词典的文字做 DOM 替换，可能误译图层名</small></span></label>
+  <div class="row"><span id="stats">词典：加载中…</span><button id="reload">刷新页面</button></div>
+  <script src="js/popup.js"></script>
+</body>
+</html>
